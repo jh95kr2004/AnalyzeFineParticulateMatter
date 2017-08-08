@@ -5,7 +5,7 @@ R project to analyze fine particulate matter of Sajik-dong, South Korea.
 Data is measured using Raspberry pi 3 and Arduino every 5 minutes.<br>
 You can check data at http://sogangds.com/<br>
 or you can get data using API(http://sogangds.com:3000/api/dust/all).<br><br>
-To read data in R using jsonlite library.<br>
+To read data in R, use jsonlite library.<br>
 library(jsonlite)<br>
 data <- fromJSON('http://sogangds.com:3000/api/dust/all')
 
