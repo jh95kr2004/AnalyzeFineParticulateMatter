@@ -1,5 +1,5 @@
 # Fine Particulate Matter
-Analyze fine particulate matter of Sajik-dong, South Korea using R.
+R project to analyze fine particulate matter of Sajik-dong, South Korea.
 
 # Data
 Data is measured using Raspberry pi 3 and Arduino every 5 minutes.<br>
