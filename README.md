@@ -15,14 +15,14 @@ data <- fromJSON('http://sogangds.com:3000/api/dust/all')
 
 <table>
 <tr><td><b>Column Name</b></td><td><b>Description</b></td></tr>
-<tr><td>date</td><td>Measured date</td></tr>
-<tr><td>temp</td><td>Temperature</td></tr>
-<tr><td>humid</td><td>Humidity</td></tr>
-<tr><td>alt</td><td>Altitude</td></tr>
-<tr><td>atm</td><td>Atmospheric pressure</td></tr>
-<tr><td>PM1</td><td>PM1.0</td></tr>
-<tr><td>PM25</td><td>PM2.5</td></tr>
-<tr><td>PM10</td><td>PM10</td></tr>
+<tr><td>date</td><td>Measured date (GMT +0)</td></tr>
+<tr><td>temp</td><td>Temperature (℃)</td></tr>
+<tr><td>humid</td><td>Humidity (%)</td></tr>
+<tr><td>alt</td><td>Altitude (m)</td></tr>
+<tr><td>atm</td><td>Atmospheric pressure (hPa)</td></tr>
+<tr><td>PM1</td><td>PM1.0 (㎍/m³)</td></tr>
+<tr><td>PM25</td><td>PM2.5 (㎍/m³)</td></tr>
+<tr><td>PM10</td><td>PM10 (㎍/m³)</td></tr>
 </table>
 
 # Goal
