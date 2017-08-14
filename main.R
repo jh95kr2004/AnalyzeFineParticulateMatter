@@ -5,10 +5,12 @@ library(ggplot2)
 library(lubridate)
 
 # get data from raspberry pi
-data <- fromJSON('http://sogangds.com:3000/api/dust/all')
-data <- tbl_df(data)
-data <- data[,-1]
-data %>% write_csv("data-2017-08-10.csv")
+# data <- fromJSON('http://sogangds.com:3000/api/dust/all')
+# data <- tbl_df(data)
+# data <- data[,-1]
+# data %>% write_csv("data-2017-08-10.csv")
+
+data <- read.csv("data-2017-08-10.csv")
 
 data %>% select(PM25, PM1, PM10) %>%
   sample_n(1000) %>%
@@ -89,3 +91,4 @@ df %>%
 df %>%
   ggplot(aes(PM25)) + geom_histogram() +
   scale_x_log10()
+
