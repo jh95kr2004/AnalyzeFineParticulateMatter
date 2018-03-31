@@ -10,7 +10,7 @@ library(lubridate)
 # data <- data[,-1]
 # data %>% write_csv("data-2017-08-10.csv")
 
-data <- read.csv("data-2017-08-10.csv")
+data <- read.csv("finedust.csv")
 
 data %>% select(PM25, PM1, PM10) %>%
   sample_n(1000) %>%
@@ -91,4 +91,3 @@ df %>%
 df %>%
   ggplot(aes(PM25)) + geom_histogram() +
   scale_x_log10()
-
